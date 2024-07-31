@@ -21,6 +21,11 @@ public class StudentController {
       return apiService.addStudent(student);
    }
 
+   @PostMapping("/students/bulk")
+   public Student addBulkStudent(@RequestBody Student student) {
+      return apiService.addBulkStudent(student);
+   }
+
    @GetMapping("students/{studentId}")
    public Student getStudentById(@PathVariable("studentId") int studentId) {
       return apiService.getStudentById(studentId);

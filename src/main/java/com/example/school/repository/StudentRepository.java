@@ -8,6 +8,8 @@ public interface StudentRepository {
 
     Student addStudent(Student student);
 
+    Student addBulkStudent(Student student);
+
     Student getStudentById(int studentId);
 
     Student updateStudent(int studentId, Student Student);
